@@ -129,7 +129,7 @@ def get_all(link):  # 下载
             print(prov + prov_type + ' ' + city + city_type + ' ' + '最高:' + max_temp + ' ' + '最低:' + min_temp).decode(
                 utf8)
             c.write(prov + prov_type + ' ' + city + city_type + ' ' + '最高:' + max_temp + ' ' + '最低:' + min_temp + '\n')
-    return (min_list)
+    return min_list
 
 
 prov_slect_list = ('''(地区) 华北=hb 华东=hd 华中=hz 华南=hn 东北=db 西北=xb 西南=xn  全部=all 退出=e 此列表=h (强迫症请忽略细节...)''').encode(utf8)
