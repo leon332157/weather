@@ -247,8 +247,6 @@ def save_graph(max_list):#保存图表
         min_canvas = echarts.Echart('最热前五城市', '来自中国天气网')
         min_bar = echarts.Bar('最高温度', final_max)  # 柱状图
         min_axis = echarts.Axis('category', 'bottom', data=final_city)  # 横向坐标
-        print(final_max)
-        print(final_city)
         min_canvas.use(min_bar)
         min_canvas.use(min_axis)
         if platform.system() is 'Windows':
